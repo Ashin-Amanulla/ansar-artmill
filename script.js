@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Hero Animation Trigger
-    setTimeout(() => {
-        document.querySelector('.hero').classList.add('loaded');
-    }, 100);
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        setTimeout(() => {
+            hero.classList.add('loaded');
+        }, 100);
+    }
 
     // 2. Sticky Header on Scroll
     const header = document.getElementById('main-header');

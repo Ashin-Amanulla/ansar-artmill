@@ -798,6 +798,108 @@ header.scrolled {
 }
 
 /* ===============
+   INTERNAL PAGES
+================= */
+.internal-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.internal-hero .hero-overlay {
+  background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.internal-hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.internal-hero h1 {
+  font-size: 4rem;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+.internal-hero p {
+  font-size: 1.15rem;
+  color: #DDD;
+  max-width: 600px;
+}
+
+.breadcrumbs {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs a {
+  color: #FFF;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumbs .separator {
+  margin: 0 0.5rem;
+  color: var(--color-accent);
+}
+
+.breadcrumbs .current {
+  color: var(--color-accent);
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.service-features {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-left: 2px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+.service-features .features-list li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-detail-image img {
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.internal-cta {
+  padding: 6rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 992px) {
+  .service-detail-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .internal-hero h1 { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .internal-hero { height: 50vh; }
+}
+
+/* ===============
    SECONDARY PAGES
 ================= */
 .secondary-page {
