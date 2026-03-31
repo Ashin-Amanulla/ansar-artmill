@@ -711,6 +711,15 @@ header.scrolled {
   margin-left: 1.5rem;
 }
 
+.neuvelabs-link {
+  color: var(--color-text);
+  transition: color 0.3s;
+}
+
+.neuvelabs-link:hover {
+  color: var(--color-accent);
+}
+
 /* ===============
    GLOBAL ANIMATIONS
 ================= */
@@ -758,5 +767,57 @@ header.scrolled {
   .flex-between { flex-direction: column; gap: 1rem; text-align: center; }
   .contact-methods { flex-direction: column; }
   .mt-1-mobile { margin-top: 1rem; }
-  .pl-4 { padding-left: 0; }
+}
+
+/* ===============
+   FLOATING WHATSAPP
+================= */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* WhatsApp Brand Green */
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  z-index: 9999;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  background-color: #20b858;
+}
+
+/* ===============
+   SECONDARY PAGES
+================= */
+.secondary-page {
+  background-color: var(--color-bg);
+}
+
+.page-content {
+  padding-top: 15vh; /* Enough space for sticky header */
+}
+
+.secondary-page .main-footer {
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+
+.mb-2 { margin-bottom: 1rem; }
+.mt-4 { margin-top: 2.5rem; }
+.mt-2 { margin-top: 1.5rem; }
+
+/* Ensure the icon renders properly centered */
+.floating-whatsapp ion-icon {
+  --ionicon-stroke-width: 40px;
 }
