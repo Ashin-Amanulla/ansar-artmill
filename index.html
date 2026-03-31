@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Interiors | Premium Design Studio</title>
+    <!-- Premium Aesthetics: Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for minimal vector icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#home">Artisan.</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact desktop-only">
+                <a href="tel:+1234567890" class="btn-sm"><ion-icon name="call-outline"></ion-icon> Book Consultation</a>
+            </div>
+            <div class="mobile-toggle">
+                <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+             <div class="hero-bg" style="background-image: url('assets/hero_image.png');"></div>
+             <div class="hero-overlay"></div>
+             <div class="hero-content">
+                 <span class="subtitle slide-up">Elevating Spaces</span>
+                 <h1 class="slide-up">Discover stunning<br>interiors that dazzle.</h1>
+                 <p class="slide-up delay-1">Expertly crafted and beautifully designed homes, ready for you.</p>
+                 <div class="hero-buttons slide-up delay-2">
+                     <a href="#about" class="btn btn-primary">Discover More</a>
+                     <a href="#services" class="btn btn-outline">Our Portfolio</a>
+                 </div>
+             </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section fade-in-section">
+            <div class="container mt-neg">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="section-subtitle">Excellence in Design</span>
+                        <h2 class="section-title">Turning dream projects into reality with unmatched precision.</h2>
+                        <p class="text-muted">Welcome to Artisan Interiors, the leading luxury design studio. Since our establishment, we have swiftly risen to the top, transforming both residential and commercial projects through architectural brilliance and intimate, personalized design.</p>
+                        <ul class="features-list">
+                            <li><ion-icon name="diamond-outline"></ion-icon> Bespoke residential design & execution</li>
+                            <li><ion-icon name="briefcase-outline"></ion-icon> Sophisticated workspace environments</li>
+                            <li><ion-icon name="leaf-outline"></ion-icon> Seamless indoor-outdoor flow</li>
+                        </ul>
+                        <a href="#process" class="link-forward mt-2">Discover our methodology <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <div class="image-reveal">
+                            <img src="assets/service_glass.png" alt="Luxury Interior Design" class="about-image parallax-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section fade-in-section bg-light">
+            <div class="container">
+                <div class="section-header-split">
+                    <div>
+                        <span class="section-subtitle">What We Do</span>
+                        <h2 class="section-title">Our Capabilities</h2>
+                    </div>
+                    <div class="header-desc">
+                        <p class="text-muted">From structural partitions to fine architectural details, our tailored services ensure every aspect of your interior is considered and elevated.</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card reveal-card">
+                        <div class="card-image-container">
+                            <img src="assets/service_glass.png" alt="Modern Glass Partitions">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Modern Partitions</h3>
+                            <p>Seamless, frameless glass systems for sophisticated offices and high-end residential studies.</p>
+                            <a href="#contact" class="btn-text">Discuss Project <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card reveal-card delay-1">
+                        <div class="card-image-container">
+                            <img src="assets/service_spa.png" alt="Spa-Inspired Bathrooms">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Spa-Inspired Sanctuaries</h3>
+                            <p>Luxurious, minimalist bathroom remodels with natural stone and ambient, glowing lighting.</p>
+                            <a href="#contact" class="btn-text">Discuss Project <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card reveal-card delay-2">
+                        <div class="card-image-container">
+                            <img src="assets/service_doors.png" alt="Custom Wood Doors">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Architectural Entryways</h3>
+                            <p>Grand, elegant solid wood entryways and architectural fixtures designed to make a statement.</p>
+                            <a href="#contact" class="btn-text">Discuss Project <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process section dark-theme fade-in-section">
+            <div class="container container-narrow">
+                <div class="section-header center">
+                    <span class="section-subtitle gold-text">How We Work</span>
+                    <h2 class="section-title text-light">From Concept to Creation</h2>
+                    <p class="text-light-muted">A structured, collaborative approach to delivering masterpieces.</p>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-num">01</div>
+                        <div class="timeline-content">
+                            <h3>Concept & Vision</h3>
+                            <p>We start by understanding your spatial needs and personal taste through an immersive consultation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">02</div>
+                        <div class="timeline-content">
+                            <h3>Architectural Design</h3>
+                            <p>Our creative team drafts technical layouts, 3D renderings, and precise material boards for your approval.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">03</div>
+                        <div class="timeline-content">
+                            <h3>Sourcing & Strategy</h3>
+                            <p>We source bespoke furniture, premium stone, and rare textiles from our global network of artisans.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-num">04</div>
+                        <div class="timeline-content">
+                            <h3>Flawless Execution</h3>
+                            <p>Our master craftsmen bring the design to reality, managing the installation down to the last millimeter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Parallax Section -->
+        <section class="stats-section bg-img fade-in-section" style="background-image: url('assets/service_spa.png');">
+            <div class="overlay-dark"></div>
+            <div class="container stats-container position-rel">
+                <div class="stat-item">
+                    <span class="stat-num">150+</span>
+                    <span class="stat-label">Luxury Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">12</span>
+                    <span class="stat-label">Design Awards</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">30+</span>
+                    <span class="stat-label">Master Craftsmen</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section id="contact" class="contact section fade-in-section">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-content text-center">
+                        <h2 class="section-title">Ready to elevate your environment?</h2>
+                        <p class="text-muted">Reach out today. Let’s create a space that perfectly articulates your lifestyle.</p>
+                        <div class="contact-methods mt-3">
+                            <a href="mailto:hello@artisaninteriors.co" class="btn btn-primary">
+                                <ion-icon name="mail-outline"></ion-icon> hello@artisaninteriors.co
+                            </a>
+                            <a href="tel:+1234567890" class="btn btn-outline mt-1-mobile">
+                                <ion-icon name="call-outline"></ion-icon> +1 234 567 890
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">Artisan.</h2>
+                <p class="footer-desc">Setting the standard in high-end spatial aesthetics and elite architectural design.</p>
+                <div class="socials">
+                    <a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" class="social-icon"><ion-icon name="logo-pinterest"></ion-icon></a>
+                    <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            
+            <div class="footer-col pl-4">
+                <h3>Discover</h3>
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#process">Process</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>HQ Address</h3>
+                <p class="footer-address">
+                    Suite 405, The Apex Tower<br>
+                    Design District, 10001<br>
+                    New York, USA
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Artisan Interiors Studio. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
